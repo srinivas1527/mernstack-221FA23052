@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: white;
+           
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        textarea {
+            width: calc(100% - 130px); 
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .gender-group label {
+            margin-right: 10px;
+            font-weight: normal;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0073bb;
+            color: white;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: #005999;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazon New User Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" name="FirstName">
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" name="LastName">
+        </div>
+        <div class="form-group">
+            <label for="Phone">Contact:</label>
+            <input type="text" id="Phone" name="Phone">
+        </div>
+        <div class="form-group">
+            <label for="MailID">Mail ID:</label>
+            <input type="text" id="MailID" name="MailID">
+        </div>
+        <div class="form-group">
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password">
+        </div>
+        <div class="gender-group">
+            <label>Gender:</label>
+            <input type="radio" name="Gender" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" value="Female" id="Female">
+            <label for="Female">Female</label>
+        </div>
+        <div class="form-group">
+            <label for="DateOfBirth">Date of Birth:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" cols="20"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="Pincode">Pincode:</label>
+            <input type="text" id="Pincode" name="Pincode">
+        </div>
+        <div class="form-group">
+            <label for="State">State:</label>
+            <input type="text" id="State" name="State">
+        </div>
+        <div class="form-group">
+            <label for="Country">Country:</label>
+            <input type="text" id="Country" name="Country">
+        </div>
+        <div class="buttons">
+            <button type="reset">Reset</button> 
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
